@@ -124,7 +124,7 @@ public class Principal {
 		System.out.println(mostrar.visitantesMes(1, visitantesYear));
 			
 		
-		//*****************************************************//
+		//*******************************************************************//
 		System.out.println("----------------------");	
 		int[] array1 = {3,6,9,15,29};
 		int[] array2 = {1,2,9,25,39,56,67,99};
@@ -145,7 +145,7 @@ public class Principal {
 		System.out.println(practicas.validarDni(dni));
 		
 		
-		//************************LIGA**********************************************
+		//************************LIGA******************************************
 		
 		// liga
 				String[][] goles = new Datos().getResultados();
@@ -157,6 +157,21 @@ public class Principal {
 					System.out.println(equipo[i] + " \t" + clasificacion[i]);
 				}
 		
+		//*******************************Fibonacci*************************************
+		
+	//	practicas.imprimeListadoNumeros(practicas.calcularFibonacci(1));
+				
+		
+		//*****************************contar Palabras*******************************
+				
+				
+			System.out.println(practicas.cuentaPalabras("hola nundo nuevo"));
+				
+		//***************************valor maximo de matriz************************
+			
+		double [][] prueba = {{1.0},{1,4,1.4}};
+		System.out.println(practicas.maximoMatriz(prueba));
+				
 		//***************escribir codigo encima de esta puñetera linea**************
 		}	
 	}

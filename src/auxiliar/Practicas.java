@@ -289,8 +289,66 @@ public class Practicas {
 			}
 		}
 		
+	//********************************calcular serie de fibbonacci******************
+	
+	
+	public int[] calcularFibonacci(int cantidad) {
+		int[] numerosFibonacci = new int[cantidad];//creamos un array vacio que contendra la serie fibonacci.
+		numerosFibonacci[0] = 0; //le asignamos su primer valor.
+		
+		if (cantidad>1) {
+			numerosFibonacci[1] = 1;//asignamos su segundo valor cuando la cantidad de numeros de fibonacci queremos 
+									//calcular srea superior a uno.
+		}
+		for (int i = 2; i < numerosFibonacci.length; i++) {
+				numerosFibonacci[i] = numerosFibonacci[i-2] + numerosFibonacci[i-1];//calculamos el resto de la serie
+		}
+		
+		return numerosFibonacci;
+		
 	}
 	
+	public void  imprimeListadoNumeros(int [] numeros){
+		
+		 for (int i = 0; i < numeros.length; i++) {
+				System.out.println(numeros[i]);
+		}
+	}
+	
+	//**************************************cuentaPalabras****************************************
+	
+	public int cuentaPalabras(String cadena) {
+		int spaceCounter = 0;
+		for (int i = 0; i < cadena.length(); i++) {
+			
+			if (cadena.charAt(i)==' ') {
+				
+				spaceCounter++;
+			}
+		} 
+		return spaceCounter + 1;
+	}
+	
+	//****************************************numero maximo de una Matriz******************************
+	
+	public double maximoMatriz(double[][] matriz) {
+		double valorMaximo = matriz[0][0];
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 1; j < matriz[i].length; j++) {
+				if (valorMaximo < matriz[i][j]) {
+					valorMaximo = matriz[i][j];
+				}
+				
+			}
+		}
+		
+		return valorMaximo;
+	}
+	
+	
+	
+}
+	
 
-	//*******************************************************************************
+
 

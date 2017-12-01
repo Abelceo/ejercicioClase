@@ -8,7 +8,7 @@ public class Datos {
 	private Estudiante[]estudiantes;
 	
 	//ejemplo de la liga
-	private String[]equipo = {"RMA","BCN","VAL","UDLP"};
+	private String[]equipo = {"RMA","BCN","VAL","SEV","UDLP"};
 	private String[][] resultados = {
 			{"","3-2","1-1","2-0","3-3"},//RMA LOCAL
 			{"2-2","","3-1","2-1","1-2"},//BCN LOCAL
