@@ -165,12 +165,19 @@ public class Principal {
 		//*****************************contar Palabras*******************************
 				
 				
-			System.out.println(practicas.cuentaPalabras("hola nundo nuevo"));
+			System.out.println(practicas.cuentaPalabras("hola mundo nuevo"));
 				
 		//***************************valor maximo de matriz************************
 			
 		double [][] prueba = {{1.0},{1,4,1.4}};
 		System.out.println(practicas.maximoMatriz(prueba));
+		
+		
+		//**************************invertir cadena******************************
+		
+		
+		
+		System.out.println(practicas.invierteCadena("ordnajela"));
 				
 		//***************escribir codigo encima de esta puñetera linea**************
 		}	

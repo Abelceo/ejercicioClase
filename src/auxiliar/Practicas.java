@@ -345,7 +345,22 @@ public class Practicas {
 		return valorMaximo;
 	}
 	
+	//***************************************invertir cadenas*******************************************
 	
+	public String invierteCadena(String cadena) {
+		String resultado = "";//inicializamos variable que va a devolver la cadena invertida.
+		
+		for (int i = cadena.length()-1; i >= 0; i--) {
+			
+			
+			resultado =	resultado + cadena.charAt(i);//extrae cada letra del string cadena y la añade a resultado. 
+		  //resultado = resultado + Character.toString(cadena.charAt(i)); //esta linea hace lo mismo que la de arriba.
+		}
+		
+
+				
+		return resultado;
+	}
 	
 }
 	
