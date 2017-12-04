@@ -362,6 +362,58 @@ public class Practicas {
 		return resultado;
 	}
 	
+	
+	//*******************************recorrer matriz irregular por columnas*****************************
+	
+	public void recorrerMatriz(int[][]matriz) {
+		int JMax = 0;
+		for (int i = 0; i < matriz.length; i++) {
+			if (matriz[i].length>JMax) {
+				JMax = matriz[i].length;
+			}
+		}
+			
+		for (int j = 0; j < JMax; j++) {
+			for (int i = 0; i < matriz.length; i++) {
+				
+				try {
+					System.out.println("[" + i + "][" + j + "]: " + matriz[i][j]);
+				} catch (Exception e) {
+					
+				}
+				
+		 }
+	}
+		
+  }
+	
+
+	
+	public void recorrerMatriz2(Integer[][]matriz) {
+		int JMax = 0;
+		for (int i = 0; i < matriz.length; i++) {
+			if (matriz[i].length>JMax) {
+				JMax = matriz[i].length;
+			}
+		}
+			
+		for (int j = 0; j < JMax; j++) {
+			for (int i = 0; i < matriz.length; i++) {
+				
+				try {
+					if(matriz[i][j] != null) {
+						System.out.println("[" + i + "][" + j + "]: " + matriz[i][j]);
+					}
+					
+				} catch (Exception e) {
+					
+				}
+				
+		 }
+	}
+		
+  }
+	
 }
 	
 

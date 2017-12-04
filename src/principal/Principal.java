@@ -178,6 +178,23 @@ public class Principal {
 		
 		
 		System.out.println(practicas.invierteCadena("ordnajela"));
+		
+		
+		//******************************recorrer matriz irregular***********************
+		
+		int[][]matriz = {
+				{3,4,8},{6},{5,8}
+		};
+		
+		practicas.recorrerMatriz(matriz);
+		
+		System.out.println("----------------------------");
+		
+		Integer[][]matriz2 = {
+				{3,null,4,8},{6,null},{5,null,8}
+		};	
+		
+		practicas.recorrerMatriz2(matriz2);
 				
 		//***************escribir codigo encima de esta puñetera linea**************
 		}	
